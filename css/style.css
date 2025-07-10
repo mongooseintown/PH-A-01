@@ -15,6 +15,8 @@ a{
 }
 .container{
     width: 1140px;
+    border: 1px solid red;
+    margin: 0 auto;
 }
 .nav-banner{
     background-image: url(../Assets/Hero-bg.png);
@@ -22,9 +24,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 
-}
-.nav-banner .container{
-    margin: 0 auto;
 }
 .nav-banner header{
 }
@@ -48,6 +47,7 @@ a{
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
+    transition: all 0.5s ease;
 }
 .nav-banner .banner{
     text-align: center;
@@ -69,4 +69,55 @@ a{
     color: #FFFFFF;
     font-family: var(--raleway);
     font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.action-section{
+    display: flex;
+    margin: 116px 0;
+}
+.action-section .text-part{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 23px;
+}
+.action-section .text-part h3{
+    font-family: var(--raleway);
+    font-size: 42px;
+    font-weight: 700;
+}
+.action-section .text-part p{
+    font-family: var(--raleway);
+    font-size: 24px;
+    color: #252432;
+    opacity: 50%;
+}
+.action-section .text-part a{
+    padding: 12px 36px;
+    background-color: #4E47FF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+.action-section .img-part{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.action-section .img-part img{
+    border-radius: 48px;
+}
+
+
+.nav-banner header nav .nav-btn:hover, .nav-banner .banner a:hover, .action-section .text-part a:hover{
+    background-color: yellow;
+    color: black;
 }
