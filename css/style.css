@@ -1,45 +1,57 @@
-:root{
+/* Universal CSS */
+:root {
     --interfont: "Inter", sans-serif;
     --raleway: "Raleway", sans-serif;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ol,ul,li{
+
+ol,
+ul,
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
+
+.container {
     width: 1140px;
     border: 1px solid red;
     margin: 0 auto;
 }
-.nav-banner{
+
+/* Universal CSS */
+
+/* NAV_BANNER */
+.nav-banner {
     background-image: url(../Assets/Hero-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.nav-banner header{
-}
-.nav-banner header nav{
+
+.nav-banner header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
 }
-.nav-banner header nav .logo{
+
+.nav-banner header nav .logo {
     font-family: var(--interfont);
     color: #4E47FF;
     font-size: 34px;
     font-weight: 800;
 }
-.nav-banner header nav .nav-btn{
+
+.nav-banner header nav .nav-btn {
     padding: 12px 36px;
     background-color: #4E47FF;
     border-radius: 10px;
@@ -49,18 +61,21 @@ a{
     color: #FFFFFF;
     transition: all 0.5s ease;
 }
-.nav-banner .banner{
+
+.nav-banner .banner {
     text-align: center;
     padding: 158px 0 152px 0;
 
 }
-.nav-banner .banner h1{
+
+.nav-banner .banner h1 {
     font-family: var(--raleway);
     font-size: 65px;
     font-weight: 800;
     color: #252432;
 }
-.nav-banner .banner a{
+
+.nav-banner .banner a {
     padding: 12px 36px;
     display: inline-block;
     margin-top: 37px;
@@ -73,11 +88,15 @@ a{
     transition: all 0.5s ease;
 }
 
-.action-section{
+/* NAV_BANNER */
+
+/* ACTION */
+.action-section {
     display: flex;
     margin: 116px 0;
 }
-.action-section .text-part{
+
+.action-section .text-part {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -85,18 +104,21 @@ a{
     align-items: flex-start;
     gap: 23px;
 }
-.action-section .text-part h3{
+
+.action-section .text-part h3 {
     font-family: var(--raleway);
     font-size: 42px;
     font-weight: 700;
 }
-.action-section .text-part p{
+
+.action-section .text-part p {
     font-family: var(--raleway);
     font-size: 24px;
     color: #252432;
     opacity: 50%;
 }
-.action-section .text-part a{
+
+.action-section .text-part a {
     padding: 12px 36px;
     background-color: #4E47FF;
     color: #FFFFFF;
@@ -106,17 +128,22 @@ a{
     font-size: 16px;
     transition: all 0.5s ease;
 }
-.action-section .img-part{
+
+.action-section .img-part {
     width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.action-section .img-part img{
+
+.action-section .img-part img {
     border-radius: 48px;
 }
 
-.productive-user-section{
+/* ACTION */
+
+/* PRODUCTIVE USER */
+.productive-user-section {
     background-color: rgba(77, 71, 255, 0.1);
     border-radius: 24px;
     display: flex;
@@ -127,39 +154,140 @@ a{
     padding: 50px 0;
     margin-bottom: 137px;
 }
-.productive-user-section h3{
+
+.productive-user-section h3 {
     font-family: var(--raleway);
     font-size: 38px;
     font-weight: 700;
     color: #252432;
 }
-.productive-user-section .stat-part{
+
+.productive-user-section .stat-part {
     display: flex;
     gap: 158px;
 }
-.productive-user-section .stat-part .active-user{
+
+.productive-user-section .stat-part .active-user {
     text-align: center;
 }
-.productive-user-section .stat-part .active-user h1, .productive-user-section .stat-part .focus-sessions h1, .productive-user-section .stat-part .satisfaction-rate h1{
+
+.productive-user-section .stat-part .active-user h1,
+.productive-user-section .stat-part .focus-sessions h1,
+.productive-user-section .stat-part .satisfaction-rate h1 {
     font-family: var(--interfont);
     font-size: 80px;
     font-weight: 700;
     color: #4E47FF;
 }
-.productive-user-section .stat-part .active-user p, .productive-user-section .stat-part .focus-sessions p, .productive-user-section .stat-part .satisfaction-rate p{
+
+.productive-user-section .stat-part .active-user p,
+.productive-user-section .stat-part .focus-sessions p,
+.productive-user-section .stat-part .satisfaction-rate p {
     font-family: var(--interfont);
     font-size: 20px;
     color: #000000;
     opacity: 50%;
 }
-.productive-user-section .stat-part .focus-sessions{
-    text-align: center;
-}
-.productive-user-section .stat-part .satisfaction-rate{
+
+.productive-user-section .stat-part .focus-sessions {
     text-align: center;
 }
 
-.nav-banner header nav .nav-btn:hover, .nav-banner .banner a:hover, .action-section .text-part a:hover{
+.productive-user-section .stat-part .satisfaction-rate {
+    text-align: center;
+}
+
+/* PRODUCTIVE USER */
+
+/* USERS FEEDBACK */
+.users-review-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 137px;
+}
+
+.users-review-section h3 {
+    font-family: var(--raleway);
+    font-size: 42px;
+    color: #252432;
+}
+
+.users-review-section .review-card {
+    display: flex;
+    gap: 20px;
+}
+
+.users-review-section .review-card .card {
+    border: 1px solid #F2EDED;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    padding: 24px;
+}
+
+.users-review-section .review-card .card .star-icons {
+    display: flex;
+    gap: 4px;
+    color: #FFB805;
+    margin-bottom: 24px;
+}
+
+.users-review-section .review-card .card h3 {
+    font-family: var(--interfont);
+    font-weight: 600;
+    font-size: 24px;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+}
+
+.users-review-section .review-card .card p {
+    font-family: var(--interfont);
+    font-weight: 400;
+    font-size: 16px;
+    color: #1E1E1E;
+    margin-bottom: 24px;
+}
+
+.users-review-section .review-card .card .user-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.users-review-section .review-card .card .user-info .img-part img {
+    border-radius: 50%;
+}
+
+.users-review-section .review-card .card .user-info .text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.users-review-section .review-card .card .user-info .text-part h4{
+    font-family: var(--interfont);
+    font-size: 16px;
+    font-weight: 700;
+    color: #757575;
+}
+
+.users-review-section .review-card .card .user-info .text-part h6{
+    font-family: var(--interfont);
+    font-size: 16px;
+    color: #B3B3B3;
+    font-weight: 400;
+}
+/* USERS FEEDBACK */
+
+/* UNIVERSAL BUTTON HOVER EFFECT */
+.nav-banner header nav .nav-btn:hover,
+.nav-banner .banner a:hover,
+.action-section .text-part a:hover {
     background-color: yellow;
     color: black;
 }
+
+/* UNIVERSAL BUTTON HOVER EFFECT */
