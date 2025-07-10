@@ -116,6 +116,48 @@ a{
     border-radius: 48px;
 }
 
+.productive-user-section{
+    background-color: rgba(77, 71, 255, 0.1);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+    margin-bottom: 137px;
+}
+.productive-user-section h3{
+    font-family: var(--raleway);
+    font-size: 38px;
+    font-weight: 700;
+    color: #252432;
+}
+.productive-user-section .stat-part{
+    display: flex;
+    gap: 158px;
+}
+.productive-user-section .stat-part .active-user{
+    text-align: center;
+}
+.productive-user-section .stat-part .active-user h1, .productive-user-section .stat-part .focus-sessions h1, .productive-user-section .stat-part .satisfaction-rate h1{
+    font-family: var(--interfont);
+    font-size: 80px;
+    font-weight: 700;
+    color: #4E47FF;
+}
+.productive-user-section .stat-part .active-user p, .productive-user-section .stat-part .focus-sessions p, .productive-user-section .stat-part .satisfaction-rate p{
+    font-family: var(--interfont);
+    font-size: 20px;
+    color: #000000;
+    opacity: 50%;
+}
+.productive-user-section .stat-part .focus-sessions{
+    text-align: center;
+}
+.productive-user-section .stat-part .satisfaction-rate{
+    text-align: center;
+}
 
 .nav-banner header nav .nav-btn:hover, .nav-banner .banner a:hover, .action-section .text-part a:hover{
     background-color: yellow;
