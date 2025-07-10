@@ -26,6 +26,10 @@ a {
     margin: 0 auto;
 }
 
+body {
+    background-color: #F5F8FF;
+}
+
 /* Universal CSS */
 
 /* NAV_BANNER */
@@ -267,20 +271,60 @@ a {
     width: 100%;
 }
 
-.users-review-section .review-card .card .user-info .text-part h4{
+.users-review-section .review-card .card .user-info .text-part h4 {
     font-family: var(--interfont);
     font-size: 16px;
     font-weight: 700;
     color: #757575;
 }
 
-.users-review-section .review-card .card .user-info .text-part h6{
+.users-review-section .review-card .card .user-info .text-part h6 {
     font-family: var(--interfont);
     font-size: 16px;
     color: #B3B3B3;
     font-weight: 400;
 }
+
 /* USERS FEEDBACK */
+
+/* CTA BANNER */
+.cta-banner {
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 71px 0;
+    gap: 20px;
+    margin-bottom: 92.23px;
+}
+.cta-banner h1{
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+}
+.cta-banner p{
+    font-family: var(--interfont);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    opacity: 50%;
+}
+.cta-banner a{
+    padding: 12px 36px;
+    font-family: var(--raleway);
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #4E47FF;
+    border-radius: 10px;
+}
+.cta-banner img{
+    border-radius: 48px;
+}
+/* CTA BANNER */
 
 /* UNIVERSAL BUTTON HOVER EFFECT */
 .nav-banner header nav .nav-btn:hover,
