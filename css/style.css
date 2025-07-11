@@ -327,6 +327,7 @@ body {
 .cta-banner a:hover{
     background-color: yellow;
     color: black;
+    transform: scale(1.1);
 }
 
 .cta-banner img {
@@ -419,6 +420,7 @@ textarea::placeholder {
 .lets-get-in-touch form .submit-btn:hover {
     background-color: yellow;
     color: black;
+    transform: scale(1.1);
 }
 
 /* LETS GET IN TOUCH */
@@ -473,6 +475,7 @@ textarea::placeholder {
 .action-section .text-part a:hover {
     background-color: yellow;
     color: black;
+    transform: scale(1.1);
 }
 
 /* UNIVERSAL BUTTON HOVER EFFECT */
