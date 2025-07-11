@@ -22,7 +22,6 @@ a {
 
 .container {
     width: 1140px;
-    border: 1px solid red;
     margin: 0 auto;
 }
 
@@ -323,6 +322,11 @@ body {
     color: #FFFFFF;
     background-color: #4E47FF;
     border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.cta-banner a:hover{
+    background-color: yellow;
+    color: black;
 }
 
 .cta-banner img {
@@ -335,10 +339,9 @@ body {
 .lets-get-in-touch {
     display: flex;
     padding: 71px 0;
-    background-color: #f0f5ff;
-    /* Light blue background from image */
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 14px;
 }
 
 .lets-get-in-touch h1 {
@@ -350,7 +353,6 @@ body {
     font-size: 97px;
     font-weight: 700;
     color: #000000;
-    padding-left: 20px;
 }
 
 .lets-get-in-touch form {
@@ -386,9 +388,12 @@ textarea {
     font-weight: 400;
     color: #000000;
 }
-.lets-get-in-touch form .input-box textarea{
+
+.lets-get-in-touch form .input-box textarea {
     padding-bottom: 85px;
+    resize: none;
 }
+
 .lets-get-in-touch form .input-box input::placeholder,
 textarea::placeholder {
     font-family: var(--interfont);
@@ -407,9 +412,60 @@ textarea::placeholder {
     font-weight: 700;
     border-radius: 10px;
     border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.lets-get-in-touch form .submit-btn:hover {
+    background-color: yellow;
+    color: black;
 }
 
 /* LETS GET IN TOUCH */
+
+/* FOOTER */
+.f {
+    background-color: #FFFFFF;
+}
+
+.f footer {
+    padding: 103px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f footer h1 {
+    font-family: var(--interfont);
+    font-size: 100px;
+    font-weight: 900;
+    color: #4E47FF;
+    margin-bottom: 8px;
+}
+
+.f footer p {
+    font-family: var(--interfont);
+    font-size: 16px;
+    font-weight: 400;
+    color: #8987A1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.f footer ul {
+    display: flex;
+    gap: 48px;
+}
+
+.f footer ul li a {
+    font-family: var(--interfont);
+    font-weight: 400;
+    font-size: 16px;
+    color: #8987A1;
+}
+
+/* FOOTER */
 
 /* UNIVERSAL BUTTON HOVER EFFECT */
 .nav-banner header nav .nav-btn:hover,
